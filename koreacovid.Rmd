@@ -62,6 +62,7 @@ table1 <- xtabs(~result + Sex, data=kRdata)
 rowPerc(table1)
 colPerc(table1)
 ```
+The data shows that 36 women  out of 100 people died out in the dead group. While 64 men out of 100 people died out in the dead group. Men seem to be dying more than females.
 
 
 ## Inferential results 
