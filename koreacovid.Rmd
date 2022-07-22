@@ -24,6 +24,9 @@ state of a patient must be died or alive - we adjust that as well
   
 # Question 1 - Is dying independent of sex
 
+$H_0$:There is no correlation between the two. The sex of a person does not determine whether they have a higher/lower likelihood of dying or not. You have the same likelihood of death based off of gender. Dying is independent. 
+
+$H_A$: There is a correlation between the two. The sex of a person does determine whether they ave a higher/lower likelihood of dying or not. You don't have the same likelihood of death based off of gender. Dying is dependent. 
 
 
 
