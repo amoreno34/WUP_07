@@ -67,8 +67,16 @@ The data shows that 36 women  out of 100 people died out in the dead group. Whil
 
 ## Inferential results 
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
+Null hypothesis is rejected in favor of the alternative. The gender does play a role. Males tend to die more than females. P-value is less than 0.05, it is 0.001 for the chi-squared test. P-value for fisher exact test is 0.0009 which is also less than 0.05. The alternative hypothesis is in favor. Odds ratie is at 2.3. Males are more likely to die from the virus.
 
 
 ## Conclusions
+
+Is death dependent or independent of gender? From the data and analysis we can conclude that it is dependent. From the values given, Males tend to die more than Females. Both chi-0squared and fisher exact test give p-values of less than 0.05. The null hypothesis is rejected in favor of the alternative. Males will die from covid more than females will. 
 
