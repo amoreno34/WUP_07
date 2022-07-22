@@ -39,18 +39,29 @@ with(kRdata, table(Sex, result))
 
 ```
 
+# Methods
+
+Cat~Cat
+Bar plot will be used as well as chi-squared test and fisher exact test
+
 ## We create two bar charts - one based on frequency and the other on percent, use ggplot commands to do this
 
-`
 
-  
+```{r}
+barchartGC(~result + Sex,data=kRdata)
+barchartGC(~result + Sex,data=kRdata, type="percent")
+```
 
-
-
-
+Frequency chart shows that mostly bboth stayed alive. Very little deaths in frequency. More females alive than males. The percent chart shows the death in Men to be more than females. This is accurate because in the frequency chart Males did have more deaths than females. Even if the numbers are so low. The percentage rate shows that Males tend to die more than woman from the virus.
 
   
 ## Numerical results
+
+```{r}
+table1 <- xtabs(~result + Sex, data=kRdata)
+rowPerc(table1)
+colPerc(table1)
+```
 
 
 ## Inferential results 
